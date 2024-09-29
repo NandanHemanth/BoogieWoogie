@@ -4,7 +4,7 @@ import mediapipe as mp
 import time
 import numpy
 
-cap = cv2.VideoCapture("/video1.mp4")
+cap = cv2.VideoCapture("../Pose_estimation/video1.mp4")
 
 prev_time = 0
 
