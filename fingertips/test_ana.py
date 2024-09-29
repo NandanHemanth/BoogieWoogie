@@ -104,7 +104,7 @@ frame_num = 0
 prev_cx, prev_cy = None, None
 
 # Open a CSV file to save the distances
-with open('pose_distances.csv', mode='w', newline='') as file:
+with open('just_dance.csv', mode='w', newline='') as file:
     writer = csv.writer(file)
     writer.writerow(["Frame", "Landmark ID", "cx", "cy", "Euclidean Distance"])
 
