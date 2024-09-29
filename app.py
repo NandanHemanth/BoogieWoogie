@@ -142,9 +142,10 @@ import streamlit as st
 import base64
 import os
 import time
+import subprocess  # Import subprocess to run external Python programs
 
 # Path to your GIF file
-file_path = "C:/Users/ndkrd/OneDrive/Desktop/giphy.gif"  # Local file for testing
+file_path = "D:/Guild/BoogieBox/giphy.gif"  # Local file for testing
 gif_data = ""
 
 # Check if the GIF file exists and encode it in base64
@@ -237,6 +238,19 @@ st.markdown(f"""
     </style>
 """, unsafe_allow_html=True)
 
+# Sidebar with leaderboard toggle
+st.sidebar.title("Leaderboard")
+
+# Toggle leaderboard
+if st.sidebar.checkbox("Show Leaderboard"):
+    st.sidebar.write("Leaderboard:")
+    leaderboard = {
+        "Nandan": 48.6,
+        "Deepak": 69.0
+    }
+    for name, score in leaderboard.items():
+        st.sidebar.write(f"{name}: {score}")
+
 # Display the animated, sparkling game title with silver color, Algerian font, and black outline
 st.markdown('<div class="main"><h1 class="title"> Boogie Box </h1></div>', unsafe_allow_html=True)
 
@@ -260,6 +274,15 @@ if play_button:
             progress_bar.progress(percent_complete + 1)
         
     st.success('Game Ready!')
+
+    # Run two Python programs simultaneously (test_ana2.py and test_ana.py)
+    try:
+        script1_process = subprocess.Popen(["python", "test_ana2.py"])
+        script2_process = subprocess.Popen(["python", "test_ana.py"])
+
+        st.success('Both Python scripts are now running!')
+    except Exception as e:
+        st.error(f"An error occurred: {e}")
 
 
 # import spotipy 
