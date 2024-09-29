@@ -9,7 +9,7 @@ pose = mpPose.Pose()
 
 pTime = 0
 
-cap = cv2.VideoCapture(0)
+cap = cv2.VideoCapture('./JD_americano.mp4')
 
 while True:
     success, img = cap.read()

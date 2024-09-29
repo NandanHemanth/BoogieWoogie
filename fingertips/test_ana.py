@@ -119,6 +119,7 @@ with open('just_dance.csv', mode='w', newline='') as file:
         frame_num += 1
         imgRGB = cv2.cvtColor(img, cv2.COLOR_BGR2RGB)
         results = pose.process(imgRGB)
+        mpDraw.draw_landmarks(img, results.pose_landmarks, mpPose.POSE_CONNECTIONS)
 
         if results.pose_landmarks and frame_num % 8 == 0:
             for id, lm in enumerate(results.pose_landmarks.landmark):
