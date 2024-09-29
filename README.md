@@ -44,3 +44,4 @@ streamlit run app.py
 ## 🌟 Future Scope
 
 - **AI-Gym Trainer:** As a future enhancement, BoogieBox aims to include an AI-powered gym trainer to guide your workouts and provide personalized training routines based on your performance and goals.
+ 
