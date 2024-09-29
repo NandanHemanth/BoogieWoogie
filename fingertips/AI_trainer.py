@@ -117,7 +117,7 @@ while True:
             
             # Find the angle between shoulder, elbow, and wrist
             angle = findAngle(img, lmList, shoulder, elbow, wrist)
-            per = np.interp(angle,(45, 160), (100,0))
+            per = np.interp(angle,(60, 160), (100,0))
             print(angle, per)
 
             if per==100:
