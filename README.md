@@ -1,4 +1,4 @@
-# 🎶 BoogieBox 🎶
+# 🎶 BoogieWoogie 🎶
 
 **BoogieBox** is your ultimate disco-themed companion! Whether you're feeling funky, groovy, or chill, BoogieBox recommends the perfect tunes to match your vibe. But wait, there's more! The most exciting part? You get to have a **Just Dance face-off with an AI-powered challenger**! It's time to show off your moves and let the music take control.
 
